@@ -9,7 +9,7 @@ const images = $('#picture');
 let runningQuestion = 0;
 let correctScore = 0;
 let incorrectScore = 0;
-let numQuestions = 2;
+let numQuestions = 9;
 let myTimer = 30
 let intervalId;
 let clockRunning = false;
@@ -19,12 +19,12 @@ let questionsAnswer = [
 
 
     {
-       question: "What happens when you eat the red mushroom on Super Mario Bros",
-       imgPic :"./images/MarioBros.gif ",
-       a: "You will Fly",
-       b: "You will earn a life",
-       c: "You will Grow",
-       d: "You will get poisoned",
+       question: "Who Lives in a pineapple under the sea?",
+       imgPic :"./images/spongebob.gif ",
+       a: "Nemo",
+       b: "Franklin the Turtle",
+       c: "Spongebob Squarepants",
+       d: "Eugene Krabs",
        correctAnswer: 'c',
        newTimer: 30
        
@@ -32,27 +32,95 @@ let questionsAnswer = [
    },
 
    {
-       question: "What year did sonic first?",
-       imgPic :"./images/nintendoStart.png",
-       a: "bb",
-       b: "1bb",
-       c: "19rrg",
-       d: "1vv",
+       question: "What was the name of Dexter's Rival? (Dexter's Laboratory)",
+       imgPic :"./images/Dexter.gif",
+       a: "Krunk",
+       b: "Val halen",
+       c: "Major Glory",
+       d: "Mandark",
        correctAnswer: 'd',
        newTimer: 30
    },
 
 
    {
-       question: "What year did Nintendo first?",
-       a: "1994",
-       b: "1984",
-       c: "1974",
-       d: "1645",
+       question: "Which of the following was NOT a powerpuff girl?",
+       imgPic :"./images/powerpuff.gif",
+       a: "Blessing",
+       b: "Blossom",
+       c: "Buttercup",
+       d: "Bubbles",
        correctAnswer: 'a',
        newTimer: 30
-   }
+   },
 
+   {
+    question: "Who had a huge crush on the cartoon Hey Arnold?",
+    imgPic :"./images/helga.gif",
+    a: "Helga",
+    b: "Rhonda",
+    c: "Phobe",
+    d: "Patty",
+    correctAnswer: 'a',
+    newTimer: 30
+},
+
+{
+    question: "Who had a huge crush on the cartoon Hey Arnold?",
+    imgPic :"./images/helga.gif",
+    a: "Helga",
+    b: "Rhonda",
+    c: "Phobe",
+    d: "Patty",
+    correctAnswer: 'b',
+    newTimer: 30
+},
+
+
+{
+    question: "Who had a huge crush on the cartoon Hey Arnold?",
+    imgPic :"./images/helga.gif",
+    a: "Helga",
+    b: "Rhonda",
+    c: "Phobe",
+    d: "Patty",
+    correctAnswer: 'b',
+    newTimer: 30
+},
+
+{
+    question: "Who had a huge crush on the cartoon Hey Arnold?",
+    imgPic :"./images/helga.gif",
+    a: "Helga",
+    b: "Rhonda",
+    c: "Phobe",
+    d: "Patty",
+    correctAnswer: 'b',
+    newTimer: 30
+},
+
+{
+    question: "Who had a huge crush on the cartoon Hey Arnold?",
+    imgPic :"./images/helga.gif",
+    a: "Helga",
+    b: "Rhonda",
+    c: "Phobe",
+    d: "Patty",
+    correctAnswer: 'b',
+    newTimer: 30
+},
+
+
+{
+    question: "Who had a huge crush on the cartoon Hey Arnold?",
+    imgPic :"./images/helga.gif",
+    a: "Helga",
+    b: "Rhonda",
+    c: "Phobe",
+    d: "Patty",
+    correctAnswer: 'b',
+    newTimer: 30
+},
 
 ]
 
@@ -75,6 +143,7 @@ $( document ).ready(function(){
     
     if (myTimer < 0){
         $('#mainPage').hide();
+        $('#question').html("TIMES UP!!");
         $('#endScreen').show();
         $('#rightAnswer').text("You got " + correctScore + "  correct");
         $('#wrongAnswer').text("You got " + incorrectScore + "  incorrect");
@@ -135,9 +204,10 @@ function checkAnswer(correctAnswer){
         $('#question').hide();
         $('.btn').hide();
         
+        
     
         document.getElementById("picture").src = questionsAnswer[runningQuestion].imgPic
-     
+        $('#picture').show()
          
         setTimeout(function(){$('#picture').hide(), $('#question').show(),$('.btn').show(), $('#display').show(), reset() }, 3000)
        
