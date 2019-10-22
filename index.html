@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
+    <link rel ="stylesheet" href="./assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
+<body style= "background : url(images/background.jpeg)">
         <div class="jumbotron jumbotron-fluid">
                 <div class="container">
                   <h1 class="display-4">Fluid jumbotron</h1>
@@ -16,30 +18,44 @@
                 </div>
               </div>
 
+
+
+
         <div class="container">
             <div id = "mainPage">
                <div id ="timer" class = "row">
-                  <h1 id = "display">30</h1> 
+                  <h1 class="col-md-12"   id = "display">30</h1> 
                </div>
-               <div id ="question" class = "row">
-                   <h2> </h2> 
+
+               <div id ="questionDiv" class = "row">
+                   <h2 class="col-md-12" id ="question"></h2> 
+                   <img class="col-md-12" id= "picture" src="" style="width: 100px">
+                   <div id="endScreen">
+                        <p id = "rightAnswer">Correct Answers</p>
+                        <p id = "wrongAnswer">Incorrect Answers</p>
+    
+                    </div>
+                   
                </div>
 
                    <br>
-
-                   <button id="a" type="button" onclick="checkAnswer('a')" class="btn btn-outline-primary">Primary</button>
+                    <div class="row">
+                        <div id="buttonDiv"   class="col-md-12">
+                            
+             
+                 <button id="a" type="button" onclick="checkAnswer('a')" class="btn btn-outline-primary">Primary</button> 
+                            <br>
                    <button id="b" type="button" onclick="checkAnswer('b')" class="btn btn-outline-secondary">Secondary</button>
                    <button id="c" type="button" onclick="checkAnswer('c')" class="btn btn-outline-success">Success</button>
+
+                   <br>
                    <button  id="d" type="button"onclick="checkAnswer('d')" class="btn btn-outline-danger">Danger</button>
-
-                   <img id= "picture" src="" style="width: 200px">
-
-                </div>
-                <div id="endScreen">
-                    <p id = "rightAnswer">Correct Answers</p>
-                    <p id = "wrongAnswer">Incorrect Answers</p>
+                            
+            </div>
+                   
 
                 </div>
+                
             </div>
 
 

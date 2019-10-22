@@ -19,12 +19,12 @@ let questionsAnswer = [
 
 
     {
-       question: "What year did Nintendo first?",
-       imgPic :"./images/MarioTrivia.jpeg",
-       a: "1994",
-       b: "1984",
-       c: "1974",
-       d: "1645",
+       question: "What happens when you eat the red mushroom on Super Mario Bros",
+       imgPic :"./images/MarioBros.gif ",
+       a: "You will Fly",
+       b: "You will earn a life",
+       c: "You will Grow",
+       d: "You will get poisoned",
        correctAnswer: 'c',
        newTimer: 30
        
@@ -104,7 +104,6 @@ $( document ).ready(function(){
 // what should  happen when the timer runs out
 
 
-
 //reset
 function reset(){
     $("#display").text("30");
@@ -113,21 +112,21 @@ function reset(){
     
     }
     
-//a function that will run through the questions after each selection
+ //a function that will run through the questions after each selection
 function renderQuestion(){
     let q = questionsAnswer[runningQuestion];
-    question.text(q.question);
-    choiceA.text = q.a;
-    choiceB.text = q.b;
-    choiceC.text = q.c;
-    choiceD.text = q.d;
+    question.html(q.question);
+    choiceA.text(q.a);
+    choiceB.text(q.b)
+    choiceC.text(q.c)
+    choiceD.text(q.d);
     images.attr = q.imgPic;
 
 
 }
 
 renderQuestion();
-// a function that calls the array of questions and adds a point when you get the answer wrong
+// // a function that calls the array of questions and adds a point when you get the answer wrong
 
 
 function checkAnswer(correctAnswer){
@@ -135,7 +134,7 @@ function checkAnswer(correctAnswer){
     
         $('#question').hide();
         $('.btn').hide();
-        $('#display').hide()
+        
     
         document.getElementById("picture").src = questionsAnswer[runningQuestion].imgPic
      
@@ -150,7 +149,10 @@ function checkAnswer(correctAnswer){
     console.log('ok');
     
         if(runningQuestion > numQuestions){
-            alert("HEY")
+            $('#question').hide();
+        $('#endScreen').show();
+        $('#rightAnswer').text("You got " + correctScore + "  correct");
+        $('#wrongAnswer').text("You got " + incorrectScore + "  incorrect");
     
         } else{
             reset();
@@ -166,7 +168,7 @@ function checkAnswer(correctAnswer){
         runningQuestion ++;
         reset();
         if(runningQuestion > numQuestions){
-        $('#mainPage').hide();
+         $('#question').hide();
         $('#endScreen').show();
         $('#rightAnswer').text("You got " + correctScore + "  correct");
         $('#wrongAnswer').text("You got " + incorrectScore + "  incorrect");
@@ -188,5 +190,6 @@ function checkAnswer(correctAnswer){
     
     
     }
+
     
 

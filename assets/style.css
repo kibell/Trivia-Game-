@@ -1,0 +1,73 @@
+#questionDiv {
+ background: blue;
+color: white;
+font-family: 'Inconsolata', monospace;
+font-size: 28px;
+border-radius: 10%;
+height: 300px;
+border-style: solid;
+border-color: red;
+border-width: 25px;
+
+}
+
+#timer{
+    text-align: center; 
+    background: blue;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 28px;
+    border-radius: 10%;
+    height: 70px;
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+    margin-left: 470px;
+    margin-right: 470px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#question, #picture {
+
+    text-align: center;
+}
+
+#buttonDiv{
+    text-align: center;
+
+}
+
+
+
+#a{
+
+    margin-bottom: 60px;
+
+}
+
+
+#b{
+
+    margin-right: 100px;
+}
+
+#c{
+
+    margin-left: 100px;
+}
+
+#d{
+
+    margin-top: 60px;
+}
+
+.btn{
+
+    color: white
+
+}
+
+#picture{
+    width: 20px
+}
