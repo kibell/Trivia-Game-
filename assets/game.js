@@ -66,59 +66,59 @@ let questionsAnswer = [
 },
 
 {
-    question: "Who had a huge crush on the cartoon Hey Arnold?",
-    imgPic :"./images/helga.gif",
-    a: "Helga",
-    b: "Rhonda",
-    c: "Phobe",
-    d: "Patty",
-    correctAnswer: 'b',
+    question: "What was Bugs Bunny's famous Phrase?",
+    imgPic :"./images/bugs.gif",
+    a: "I like my diamonds, how I like my food",
+    b: "Where is the carrots?",
+    c: "What's up Doc?",
+    d: "Wooozaaaa",
+    correctAnswer: 'c',
     newTimer: 30
 },
 
 
 {
-    question: "Who had a huge crush on the cartoon Hey Arnold?",
-    imgPic :"./images/helga.gif",
-    a: "Helga",
-    b: "Rhonda",
-    c: "Phobe",
-    d: "Patty",
+    question: "Which Veggie made Popeye Strong!",
+    imgPic :"./images/popeye.gif",
+    a: "Green beans",
+    b: "Spinach",
+    c: "Asparagas",
+    d: "Brocolli",
     correctAnswer: 'b',
     newTimer: 30
 },
 
 {
-    question: "Who had a huge crush on the cartoon Hey Arnold?",
-    imgPic :"./images/helga.gif",
-    a: "Helga",
-    b: "Rhonda",
-    c: "Phobe",
-    d: "Patty",
-    correctAnswer: 'b',
+    question: "What color was Dino from the flinstones?",
+    imgPic :"./images/dino.gif",
+    a: "Purple",
+    b: "Green",
+    c: "Blue",
+    d: "Who is Dino?",
+    correctAnswer: 'a',
     newTimer: 30
 },
 
 {
-    question: "Who had a huge crush on the cartoon Hey Arnold?",
-    imgPic :"./images/helga.gif",
-    a: "Helga",
-    b: "Rhonda",
-    c: "Phobe",
-    d: "Patty",
-    correctAnswer: 'b',
+    question: "Which of the following was NOT a member of the Mystery Gang ",
+    imgPic :"./images/doo.gif",
+    a: "Maggie",
+    b: "Daphne",
+    c: "Velma",
+    d: "Fred",
+    correctAnswer: 'a',
     newTimer: 30
 },
 
 
 {
-    question: "Who had a huge crush on the cartoon Hey Arnold?",
+    question: "Which scientific term is used to describe the condition that Elmer Fudd has?",
     imgPic :"./images/helga.gif",
     a: "Helga",
     b: "Rhonda",
     c: "Phobe",
-    d: "Patty",
-    correctAnswer: 'b',
+    d: "Rhotacism",
+    correctAnswer: 'd',
     newTimer: 30
 },
 
@@ -127,6 +127,15 @@ let questionsAnswer = [
 
 //Create a timer that will countdown as soon as the game starts
 $( document ).ready(function(){
+   
+$('#mainPage').hide()
+
+
+
+
+    $('#start').click(function(){
+        $('#mainPage').show()
+        $('#start').hide()
     $('#endScreen').hide()
     
         if (!clockRunning) {
@@ -168,7 +177,7 @@ $( document ).ready(function(){
     
     });
     
-
+});
 
 // what should  happen when the timer runs out
 
