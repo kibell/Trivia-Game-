@@ -6,6 +6,7 @@ const choiceD = $('#d');
 const timer = $('#timer');
 const question = $('#question');
 const images = $('#picture');
+
 let runningQuestion = 0;
 let correctScore = 0;
 let incorrectScore = 0;
@@ -14,7 +15,11 @@ let myTimer = 30
 let intervalId;
 let clockRunning = false;
 
+const audioElement = document.getElementById("myAudio");
+const audioMidi = document.getElementById("myMidi");
 //an Array of Questions and answers
+
+
 let questionsAnswer = [
 
 
@@ -112,17 +117,20 @@ let questionsAnswer = [
 
 
 {
-    question: "Which scientific term is used to describe the condition that Elmer Fudd has?",
-    imgPic :"./images/helga.gif",
-    a: "Helga",
-    b: "Rhonda",
-    c: "Phobe",
-    d: "Rhotacism",
+    question: "Who is NOT part of the Teen Titans?",
+    imgPic :"./images/original.gif",
+    a: "Robin",
+    b: "Starfire",
+    c: "Beastboy",
+    d: "Gizmo",
     correctAnswer: 'd',
     newTimer: 30
 },
 
 ]
+
+
+
 
 
 //Create a timer that will countdown as soon as the game starts
@@ -134,9 +142,12 @@ $('#mainPage').hide()
 
 
     $('#start').click(function(){
+        
+        audioMidi.play();
         $('#mainPage').show()
         $('#start').hide()
     $('#endScreen').hide()
+    
     
         if (!clockRunning) {
         intervalId = setInterval(count, 1000);
@@ -243,6 +254,7 @@ function checkAnswer(correctAnswer){
     
     
     } else {
+        audioElement.play();
         incorrectScore ++
         runningQuestion ++;
         reset();
