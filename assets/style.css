@@ -1,36 +1,40 @@
 #questionDiv {
- background: blue;
+background-image:  linear-gradient(to left, crimson,black) ;
 color: white;
 font-family: 'Inconsolata', monospace;
-font-size: 28px;
+font-size: 18px;
 border-radius: 10%;
-height: 300px;
+height: 200px;
 border-style: solid;
-border-color: yellow;
+border-color: gold;
 border-width: 25px;
 
 }
 
 #timer{
     text-align: center; 
-    background: blue;
+    background: rgb(4, 4, 133);
     color: white;
     font-family: 'Inconsolata', monospace;
     font-size: 28px;
     border-radius: 10%;
     height: 70px;
     border-style: solid;
-    border-color: yellow;
-    border-width: 5px;
+    border-color: gold;
+    border-width: 10px;
     margin-left: 470px;
     margin-right: 470px;
     font-weight: bold;
     line-height: 50px;
+    margin-bottom: 5px;
+    font-family: 'Bangers', cursive;
 }
 
-#question, #picture {
-
+#question {
+margin-top: 35px;
+padding-top: 5px;
     text-align: center;
+    font-family: 'Bangers', cursive;
 }
 
 #buttonDiv{
@@ -48,23 +52,34 @@ h1{
 #a{
 
     margin-bottom: 60px;
-
+    border-radius: 20%;
+font-size: 25px;
+font-family: 'Bangers', cursive;
 }
 
 
 #b{
 
     margin-right: 100px;
+    border-radius: 20%;
+font-size: 25px;
+font-family: 'Bangers', cursive;
 }
 
 #c{
 
     margin-left: 100px;
+    border-radius: 20%;
+font-size: 25px;
+font-family: 'Bangers', cursive;
 }
 
 #d{
 
     margin-top: 60px;
+    border-radius: 20%;
+font-size: 25px;
+font-family: 'Bangers', cursive;
 }
 
 .btn{
@@ -86,4 +101,8 @@ background: crimson;
 
 .lead, p {
     font-family: 'Bangers', cursive;
+}
+
+#display{
+    margin-bottom: 5px;
 }

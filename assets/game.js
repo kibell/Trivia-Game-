@@ -19,12 +19,12 @@ let questionsAnswer = [
 
 
     {
-       question: "Who Lives in a pineapple under the sea?",
+       question: "What super villain once broke Batman's back, leaving him crippled and wheelchair-bound?",
        imgPic :"./images/spongebob.gif ",
-       a: "Nemo",
-       b: "Franklin the Turtle",
-       c: "Spongebob Squarepants",
-       d: "Eugene Krabs",
+       a: "Joker",
+       b: "Mr. Freeze",
+       c: "Bane",
+       d: "Poison Ivy",
        correctAnswer: 'c',
        newTimer: 30
        
@@ -32,80 +32,80 @@ let questionsAnswer = [
    },
 
    {
-       question: "What was the name of Dexter's Rival? (Dexter's Laboratory)",
+       question: "What is Clark Kent's middle name?",
        imgPic :"./images/Dexter.gif",
-       a: "Krunk",
-       b: "Val halen",
-       c: "Major Glory",
-       d: "Mandark",
+       a: "William",
+       b: "Henry",
+       c: "Thomas",
+       d: "Joesph",
        correctAnswer: 'd',
        newTimer: 30
    },
 
 
    {
-       question: "Which of the following was NOT a powerpuff girl?",
+       question: "Who did Wolverine fight in his first appearance?",
        imgPic :"./images/powerpuff.gif",
-       a: "Blessing",
-       b: "Blossom",
-       c: "Buttercup",
-       d: "Bubbles",
+       a: "Hulk",
+       b: "Nick Fury",
+       c: "Captain America",
+       d: "Gambit",
        correctAnswer: 'a',
        newTimer: 30
    },
 
    {
-    question: "Who had a huge crush on the cartoon Hey Arnold?",
+    question: "What is Iron Man's real name?",
     imgPic :"./images/helga.gif",
-    a: "Helga",
-    b: "Rhonda",
-    c: "Phobe",
-    d: "Patty",
+    a: "Tony Stark",
+    b: "Tony Hawk",
+    c: "Tony Spark",
+    d: "Tim Stark",
     correctAnswer: 'a',
     newTimer: 30
 },
 
 {
-    question: "What was Bugs Bunny's famous Phrase?",
+    question: "Who is Thor's father?",
     imgPic :"./images/bugs.gif",
-    a: "I like my diamonds, how I like my food",
-    b: "Where is the carrots?",
-    c: "What's up Doc?",
-    d: "Wooozaaaa",
+    a: "Zeus",
+    b: "Loki",
+    c: "Odin",
+    d: "Asgard",
     correctAnswer: 'c',
     newTimer: 30
 },
 
 
 {
-    question: "Which Veggie made Popeye Strong!",
+    question: "What is Shuri's relationship with T'Challa?",
     imgPic :"./images/popeye.gif",
-    a: "Green beans",
-    b: "Spinach",
-    c: "Asparagas",
-    d: "Brocolli",
+    a: "First Cousin",
+    b: "Younger Sister",
+    c: "Older sister",
+    d: "Distant cousin",
     correctAnswer: 'b',
     newTimer: 30
 },
 
 {
-    question: "What color was Dino from the flinstones?",
+    question: "What comic book did Spider-Man first appear in?",
     imgPic :"./images/dino.gif",
-    a: "Purple",
-    b: "Green",
-    c: "Blue",
-    d: "Who is Dino?",
+    a: "Amazing Fantasy #15",
+    b: "Amazing spiderman #1",
+    c: "Who is the spider #12",
+    d: "The adventures of Spiderman #1",
     correctAnswer: 'a',
     newTimer: 30
 },
 
 {
-    question: "Which of the following was NOT a member of the Mystery Gang ",
+    question: "What is the Jokers real name? ",
     imgPic :"./images/doo.gif",
-    a: "Maggie",
-    b: "Daphne",
-    c: "Velma",
-    d: "Fred",
+    a: "Jack Napier",
+    b: "Jim Landon",
+    c: "Keith Ramsey",
+    d: "Fred Samson",
     correctAnswer: 'a',
     newTimer: 30
 },
