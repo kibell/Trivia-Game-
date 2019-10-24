@@ -6,17 +6,18 @@ const choiceD = $('#d');
 const timer = $('#timer');
 const question = $('#question');
 const images = $('#picture');
-
+const buttonDiv = $('#buttonDiv')
 let runningQuestion = 0;
 let correctScore = 0;
 let incorrectScore = 0;
-let numQuestions = 9;
+let numQuestions = 7;
 let myTimer = 30
 let intervalId;
 let clockRunning = false;
 
 const audioElement = document.getElementById("myAudio");
 const audioMidi = document.getElementById("myMidi");
+const audioWin = document.getElementById("myWin");
 //an Array of Questions and answers
 
 
@@ -136,13 +137,14 @@ let questionsAnswer = [
 //Create a timer that will countdown as soon as the game starts
 $( document ).ready(function(){
    
-$('#mainPage').hide()
+$('#mainPage').hide();
+$('#playAgain').hide();
 
 
 
 
     $('#start').click(function(){
-        
+
         audioMidi.play();
         $('#mainPage').show()
         $('#start').hide()
@@ -162,11 +164,15 @@ $('#mainPage').hide()
     
     
     if (myTimer < 0){
-        $('#mainPage').hide();
+        audioElement.play();
+        $('#timer').hide();
         $('#question').html("TIMES UP!!");
         $('#endScreen').show();
         $('#rightAnswer').text("You got " + correctScore + "  correct");
         $('#wrongAnswer').text("You got " + incorrectScore + "  incorrect");
+        audioElement.pause();
+        $('#playAgain').show();
+        buttonDiv.hide();
         
     }
     
@@ -199,6 +205,12 @@ function reset(){
     myTimer = 30;
     
     
+    }
+
+    //play again function
+    function playAgain(){
+        location.reload();
+
     }
     
  //a function that will run through the questions after each selection
@@ -239,10 +251,17 @@ function checkAnswer(correctAnswer){
     console.log('ok');
     
         if(runningQuestion > numQuestions){
+            audioMidi.pause();
+            audioWin.play();
+
+            $('#timer').hide();
             $('#question').hide();
         $('#endScreen').show();
         $('#rightAnswer').text("You got " + correctScore + "  correct");
         $('#wrongAnswer').text("You got " + incorrectScore + "  incorrect");
+        $('#playAgain').show();
+        buttonDiv.hide();
+        let clockRunning = true;
     
         } else{
             reset();
@@ -258,12 +277,18 @@ function checkAnswer(correctAnswer){
         incorrectScore ++
         runningQuestion ++;
         reset();
-        if(runningQuestion > numQuestions){
+                 if(runningQuestion > numQuestions){
+                    audioMidi.pause();
+                    audioWin.play();
+             $('#timer').hide();
          $('#question').hide();
         $('#endScreen').show();
         $('#rightAnswer').text("You got " + correctScore + "  correct");
         $('#wrongAnswer').text("You got " + incorrectScore + "  incorrect");
-    
+        $('#playAgain').show();
+        buttonDiv.hide();
+        let clockRunning = true;
+
         } else{
             reset();
             renderQuestion();

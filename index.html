@@ -27,6 +27,9 @@
               <audio id ="myMidi">
                     <source src="./assets/Sounds/07-hurry.mp3" type="audio/mp3">      
               </audio>
+              <audio id ="myWin">
+                    <source src="./assets/Sounds/11-fanfare.mp3" type="audio/mp3">      
+              </audio>
 
         <div class="container">
             <div id = "mainPage">
@@ -36,10 +39,11 @@
 
                <div id ="questionDiv" class = "row">
                    <h2 class="col-md-12" id ="question"></h2> 
-                   <img class="col-md-12" id= "picture" src="" style="width: 100px">
+                   <img class="col-md-12" id= "picture" src="" style="width: 50px">
                    <div id="endScreen">
                         <p id = "rightAnswer">Correct Answers</p>
                         <p id = "wrongAnswer">Incorrect Answers</p>
+                        <button id="playAgain" onclick="playAgain()" class="btn btn-primary">PLAY AGAIN</button>
                           
                     </div>
                     

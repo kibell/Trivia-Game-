@@ -4,7 +4,7 @@ color: white;
 font-family: 'Inconsolata', monospace;
 font-size: 18px;
 border-radius: 10%;
-height: 200px;
+height: 300px;
 border-style: solid;
 border-color: gold;
 border-width: 25px;
@@ -105,4 +105,8 @@ background: crimson;
 
 #display{
     margin-bottom: 5px;
+}
+
+#mainPage{
+    height: 500px;
 }
