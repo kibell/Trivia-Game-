@@ -10,7 +10,7 @@ const buttonDiv = $('#buttonDiv')
 let runningQuestion = 0;
 let correctScore = 0;
 let incorrectScore = 0;
-let numQuestions = 7;
+let numQuestions = 8;
 let myTimer = 30
 let intervalId;
 let clockRunning = false;
