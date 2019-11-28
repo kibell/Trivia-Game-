@@ -16,8 +16,7 @@
 
 
 ## Animated Gifs/Pictures of App
-
--![](trivia.gif)
+-![](trivia2.gif)
 
 
 
