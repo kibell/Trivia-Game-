@@ -1,5 +1,4 @@
 # Trivia-Game-
-# LIRI
 
 
 > 
